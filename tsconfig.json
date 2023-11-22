@@ -13,10 +13,12 @@
         "noUnusedParameters": true,
         "strict": true,
         // Modules
+        "baseUrl": "app/src",
         "module": "ESNext",
         "moduleResolution": "Bundler",
         "resolveJsonModule": true,
         "rootDir": "app",
+        "paths": {"~/*": ["./*"]},
         // Emit
         "outDir": "dist",
         "noEmit": true,
