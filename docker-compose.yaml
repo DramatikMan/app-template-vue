@@ -1,0 +1,14 @@
+services:
+
+  dev:
+    build:
+      args:
+        build_env: dev
+      context: .
+      target: builder
+    command: ["sleep", "infinity"]
+    ports:
+      - "3001:3001"
+    volumes:
+     - ./app:/project/app
+     - ./scripts:/project/scripts

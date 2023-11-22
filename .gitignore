@@ -1,0 +1,7 @@
+### ~ secret ~ ###
+*.env
+
+### ~ development ~ ###
+/*.yaml
+!/docker-compose.yaml
+!/pnpm-lock.yaml

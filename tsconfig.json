@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        // Type Checking
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "exactOptionalPropertyTypes": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
+        // Modules
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "resolveJsonModule": true,
+        "rootDir": "app",
+        // Emit
+        "outDir": "dist",
+        "noEmit": true,
+        // Interop Constraints
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        // Language and Environment
+        "jsx": "preserve",
+        "lib": ["DOM", "DOM.Iterable", "ES2020"],
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        // Completeness
+        "skipLibCheck": true
+    },
+    "include": ["app/src/**/*.ts", "app/src/**/*.tsx", "app/src/**/*.vue"],
+    "references": [{"path": "./vite.tsconfig.json"}]
+}

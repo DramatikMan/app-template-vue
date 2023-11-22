@@ -1,0 +1,12 @@
+### ~ Docker ~ ###
+.dockerignore
+docker-compose.yaml
+Dockerfile
+
+### ~ git ~ ###
+.git*
+LICENSE
+README.md
+
+### ~ development ~ ###
+scripts
