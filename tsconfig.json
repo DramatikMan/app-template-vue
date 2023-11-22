@@ -28,8 +28,8 @@
         "isolatedModules": true,
         // Language and Environment
         "jsx": "preserve",
-        "lib": ["DOM", "DOM.Iterable", "ES2020"],
-        "target": "ESNext",
+        "lib": ["DOM", "DOM.Iterable", "ES2022"],
+        "target": "ES2022",
         "useDefineForClassFields": true,
         // Completeness
         "skipLibCheck": true

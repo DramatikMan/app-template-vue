@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import {store} from "~/core";
+import {store, cfg} from "~/core";
 
 defineProps<{msg: string}>();
 
 const state = store.use();
+const BACKEND_API_URL = cfg.get("BACKEND_API_URL");
 </script>
 
 <template>
@@ -28,6 +29,7 @@ const state = store.use();
         in your IDE for a better DX
     </p>
     <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+    <p>BACKEND_API_URL: {{ BACKEND_API_URL }}</p>
 </template>
 
 <style scoped>
