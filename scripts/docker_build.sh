@@ -1,2 +1,4 @@
 #!/bin/bash
-docker build -t vue-environment .
+docker build \
+    -t app-template-vue \
+    ./

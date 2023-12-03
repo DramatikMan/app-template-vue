@@ -1,2 +1,4 @@
 #!/bin/bash
-docker exec -it vue-environment-dev-1 bash
+docker exec \
+    -it app-template-vue-main-1 \
+    bash

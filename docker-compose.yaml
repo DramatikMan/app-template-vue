@@ -1,6 +1,6 @@
 services:
 
-  dev:
+  main:
     build:
       args:
         build_env: dev
