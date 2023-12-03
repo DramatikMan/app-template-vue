@@ -1,7 +1,7 @@
-# Containerized Vue.js environment
+# Containerized Vue.js app template
 
 ```bash
-$ git clone https://github.com/DramatikMan/vue-environment.git
-$ cd vue-environment
+$ git clone https://github.com/DramatikMan/app-template-vue.git
+$ cd app-template-vue
 $ docker compose up
 ```
