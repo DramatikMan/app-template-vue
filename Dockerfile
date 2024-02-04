@@ -13,7 +13,7 @@ ARG NPM_REGISTRY="https://registry.npmjs.org"
 RUN sed -i s+NPM_REGISTRY+$NPM_REGISTRY+g .npmrc \
     && mkdir -p /usr/etc \
     && cp .npmrc /usr/etc/npmrc \
-    && npm install -g "pnpm@v8.11.0"
+    && npm install -g "pnpm@v8.15.1"
 
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
@@ -26,7 +26,12 @@ COPY tsconfig.json \
     .prettierrc.json \
     ./
 
-RUN bash -c 'if [[ "$build_env" == "dev" ]]; then npm run build:dev; else npm run build; fi'
+RUN bash -c \
+    'if [[ "$build_env" == "dev" ]]; then \
+        npm run build:dev; \
+    else \
+        npm run build; \
+    fi'
 
 ################## server ##################
 FROM $SERVER_DOCKER_REGISTRY/nginx-unprivileged:1.25.3-alpine-slim AS server
